@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesPalfarias.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f25394424a.js" crossorigin="anonymous"></script>
+    <title>Palfarias Artist</title>
+    <link rel="icon" href="./img/palfarias-logoIcono.webp">
+    <meta name="description" content="Palfarias, fine art from Atlanta to the world.">
+    <meta name="keywords" content="Pablo Alfaro, Pablo Alfaro Arias, Painting, Mexican, Artist, Violin maker">
+</head>
+    <header>
+        <a href="index.html"><img class="img-logo" src="./img/palfarias-logo.webp" alt="Palfarias Artist"></a>
+        <div class="menu-productos urbanist-text regular"><button id="btn" class="urbanist-text regular">Menu</div>
+    </header>
+
+    <!--navbar smartphone-->
+    <nav class="menuClick" id="caja">
+        <ul class="menu-ul">
+            <li><a href="index.html" class="urbanist-text thin">Home</a></li>
+            <li><a href="bio.html" class="urbanist-text thin">Bio</a></li>
+            <li><a href="contact.html" class="urbanist-text thin">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--navbar desktop-->
+    <nav class="navDesktop">
+        <a href="index.html"><img class="img-logo" src="./img/palfarias-logo.webp" alt="Palfarias Artist"></a>
+        <ul class="navDesktop-ul">
+            <li><a href="index.html" class="urbanist-text thin">Home</a></li>
+            <li><a href="bio.html" class="urbanist-text thin">Bio</a></li>
+            <li><a href="gallery.html" class="urbanist-text thin"><span class="underline">Gallery</span></a></li>
+            <li><a href="contact.html" class="urbanist-text thin">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!--Gallery-Work-->
+    <section id="work-watercolor" class="nor-length">
+        <div class="fixed-work">
+            <h2 class="urbanist-title regular left">Gallery</h2>
+        </div>
+        
+        <!--Lateral menu only for desktop-->
+        <div class="lateral-menu">
+            <div class="div-menu-lat">
+                <ul class="lateral-menu-ul">
+                    <li><a class="urbanist-text regular left thin gray-color" href="acrylic.html">Acrylic</a></li> <!--o debería ser mejor href="#section(acrylic) y así nos ahorramos los htmls siguientes?"-->
+                    <li><a class="urbanist-text regular left thin gray-color" href="oil.html">Oil</a></li>
+                    <li><a class="urbanist-text regular left thin black-color" href="watercolor.html">Watercolor</a></li>
+                    <li><a class="urbanist-text regular left thin gray-color" href="mixed.html">Mixed</a></li>
+                    <li><a class="urbanist-text regular left thin gray-color" href="caricatures.html">Caricatures</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Watercolor-->
+        <div class="paintings">
+            <div class="work-watercolor">
+                <div class="paintings-group">
+                    <div class="details">
+                        <div class="details-1">
+                            <a href="gallery.html">
+                                <div class="chevron-l">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </div>
+                            </a>
+                            <p class="urbanist-subtitle regular left">Watercolor</p>
+                            <div class="thinline"></div>
+                        </div>
+                    </div>
+                    <div class="paintings-cont">
+                        <a href="#watercolor_01">
+                            <div class="container">
+                                <img class="img-within" src="./img/watercolor_01.webp" alt="Watercolor on cardboard, 31 x 24 cm, 2019">
+                                <div class="description">
+                                    <ul>
+                                        <li class="urbanist-text regular left">Watercolor on cardboard</li>
+                                        <li class="urbanist-text thin left">31 x 24 cm</li>
+                                        <li class="urbanist-text thin left">2019</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                        
+
+                        <!--Este es un espacio extra al final--> 
+                        <div class=" chevron-container">
+                            <a href="watercolor.html">
+                                <div class="chevron-r-container">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Hidden-->
+        <article>
+            <div class="light-box" id="watercolor_01">
+                <div>
+                    <img src="./img/watercolor_01.webp" alt="Watercolor on cardboard, 31 x 24 cm, 2019">
+                    <div class="description">
+                        <ul>
+                            <li class="urbanist-text regular center">Watercolor on cardboard</li>
+                            <li class="urbanist-text thin center">31 x 24 cm</li>
+                            <li class="urbanist-text thin center">2019</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#" class="close-img"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+        </article>
+    </section>    
+    <!--Footer-->
+    <footer id="footer">
+        <ul>
+            <li class="urbanist-small thin">Palfarias Artist 2023</li>
+            <li class="urbanist-small thin ">Site by <a class="cecita" href="http://www.cecitadesign.com/">Cecita Design</a></li>
+        </ul>
+    </footer>
+    </body>
+    <script src="./clickMenu.js"></script>
+</html>

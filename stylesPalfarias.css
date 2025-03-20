@@ -1,0 +1,1341 @@
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --blue: #1E3993;
+    --red: #94322B;
+    --yellow: #CA6100;
+    --light-gray-line: #DEDDDD;
+    --light-gray-footer: #E2E2E2;
+    --gray: #808080;
+
+    --urbanist-title-smartphone: 24px;
+    --urbanist-subtitle-smartphone: 20px;
+    --urbanist-text-smartphone: 15px;
+    --urbanist-small-smartphone: 12px;
+
+    --urbanist-title-tablet: 30px;
+    --urbanist-subtitle-tablet: 22px;
+    --urbanist-text-tablet: 18px;
+    --urbanist-small-tablet: 15px;
+
+    --urbanist-title-desktop: 32px;
+    --urbanist-subtitle-desktop: 25px;
+    --urbanist-text-desktop: 19px;
+    --urbanist-small-desktop: 14px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--white);
+    font-family: 'Urbanist', sans-serif;
+    color: var(--black);
+}
+/*Generales*/
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+li {
+    list-style: none;
+}
+section {
+    height: fit-content;
+}
+.thin {
+    font-weight: 200;
+}
+.regular {
+    font-weight: 400;
+}
+.bold {
+    font-weight: 500;
+}
+
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
+.center {
+    text-align: center;
+}
+.justify {
+    text-align: justify;
+}
+
+.gray-color {
+    color: var(--gray);
+}
+.black-color {
+    color: var(--black)
+}
+.img-within { /*DEBO IR AJUSTANDO ESTA PARA QUE NO SE DESCAGALE TODOOO*/
+    width: 100%;
+    object-fit: cover;
+}
+
+.preloader {
+    background: var(--white) url(./img/logo.gif) no-repeat center center;
+    background-size: 40%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000000;
+}
+
+
+/*             SMARTPHONE       ------------------------------------------------------------------------------*/
+.urbanist-title {
+    font-size: var(--urbanist-title-smartphone);
+    line-height: 29px;
+}
+.urbanist-subtitle {
+    font-size: var(--urbanist-subtitle-smartphone);
+    line-height: 24px;
+}
+.urbanist-text {
+    font-size: var(--urbanist-text-smartphone);
+    line-height: 24px;
+}
+.urbanist-small {
+    font-size: var(--urbanist-small-smartphone);
+    line-height: 20px;
+}
+
+.navDesktop {
+    display: none;
+}
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    border-bottom: 1px solid var(--light-gray-line);
+    background-color: var(--white);
+    top: 0;
+    z-index: 20;
+    padding: 0 11.5%;
+    overflow: hidden;
+}
+.img-logo {
+    width: 77px;
+    cursor: pointer;
+    object-fit: cover;
+}
+.menuClick {
+    display: none;
+    height: 0;
+    width: 0;
+}
+.menu-ul .urbanist-text:hover {
+        filter: opacity(0.5);
+}
+.menuClick.verBarra {
+    background-color: var(--white);
+    height: 200px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 88px;
+    right: 0;
+    line-height: 45px;
+    z-index: 100;
+    border-bottom: 1px solid var(--light-gray-line);
+    border-left: 1px solid var(--light-gray-line);
+    text-align: right;
+    transition: filter 0.9s ease-in-out;
+}
+.menu-productos button {
+    border-style: none;
+    background: none;
+    cursor: pointer;
+}
+.menu-productos button:hover {
+    filter: opacity(0.5);
+}
+
+section {
+    margin-bottom: 100px;
+}
+.urbanist-title {
+    margin-bottom: 23px;
+}
+.nor-length {
+    width: 77%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    height: 70px;
+    width: 100%;
+    background-color: var(--light-gray-footer);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    bottom: 0;
+}
+footer ul {
+    display: flex;
+    gap: 30px;
+}
+footer .urbanist-small, .cecita {
+    color: black;
+}
+.cecita:hover {
+    color: gray;
+}
+
+
+
+
+/*------------------------------------------------------------------------------HOME/INDEX*/
+/*SAMPLES*/
+#samples {
+    margin-top: 120px;    
+}
+.cont-samples {
+    margin-bottom: 29px;
+}
+.img-vert {
+    height: 340px;
+}
+.div-samples {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.line {
+    height: 67px;
+    width: 10px;
+}
+.blue-line {
+    background-color: var(--blue);
+}
+.red-line {
+    background-color: var(--red);
+}
+.yellow-line {
+    background-color: var(--yellow);
+}
+
+/*EXHIBITIONS*/
+.img-exh {
+    width: 100vw;
+    height: 450px;
+    object-fit: cover;
+}
+.div-exh {
+    display: flex;
+    justify-content: right;
+    cursor: pointer;
+}
+.div-exh-right {
+    width: fit-content;
+    justify-content: right;
+    display: flex;
+    flex-direction: column;
+}
+.exh-right {
+    display: flex;
+    justify-content: right;
+}
+.img-exh-desc {
+    display: block;
+    width: 187px;
+    right: 0;
+}
+
+ /*PABLO ALFARO*/
+.div-pablo .img-pablo {
+    height: 100%;
+ }
+.palfaro-description {
+    margin-top: 23px;
+    position: relative;
+    height: 180px;
+}
+.last {
+    position: absolute;
+    bottom: 0;
+    /*margin-top: 30px;*/
+}
+#index-contact {
+    position: relative;
+    text-align: center;
+}
+.img-logo-bg-index {
+    z-index: -10;
+    width: 100px;
+    object-fit: cover;
+    margin-top: 100px;
+}
+.index-contact {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+    padding: 30px;
+    height: fit-content;
+    min-width: 200px;
+    border: 1px solid var(--light-gray-line);
+    background-color: var(--white);
+}
+
+
+/*-------------------------------------------------------------------------------------BIO*/
+#biography {
+    margin-top: 120px;
+}
+#biography .div-bio .div-img-bio .img-within-bio {
+    margin: 50px 0;
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+}
+/*-------------------------------------------------------------------------------------GALLERY*/
+#work {
+    margin-top: 120px;
+}
+.fixed-work-gallery {
+    background-color: var(--white);
+    height: 73px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    margin-top: -72px;
+    padding-top: 21px;
+}
+
+.lateral-menu {
+    display: none; 
+}
+
+.click-painting {
+    display: none;
+}
+
+.paintings-gallery {
+    width: 100%;
+    margin-top: 162px;
+}
+.paintings-group-gallery {
+    margin-top: 50px;
+}
+.details-gallery {
+    margin-bottom: 14px;  
+}
+.details-1-gallery {
+    display: grid;
+    align-items: end;
+    grid-template-columns: 40% 60%;
+    transition: filter 0.2s ease-in-out;
+}
+.details-1-gallery:hover {
+    filter: opacity(0.5);
+    cursor: pointer;
+}
+.details-1-gallery .thinline {
+    height: 1px;
+    width: 100%;
+    background-color: var(--light-gray-line);
+}
+.paintings-cont-gallery {
+    display: flex;
+    justify-content: normal;
+    position: relative;
+    min-width: 77%;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap: 23px;
+}
+.container-gallery {
+    min-width: 225px;
+    max-width: 225px;
+    margin-bottom: 23px;
+    position: relative;
+    overflow-wrap: normal;
+    transition: filter 0.2s ease-in-out;
+}
+.img-within {
+    height: 200px;
+}
+.chevron-container-gallery {
+    display: flex;
+    padding-top: 90px;
+}
+.chevron-container-gallery .chevron-r-container {
+    background-color: var(--white);
+    height: 100%;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: start;   
+    transition: filter 0.2s ease-in-out;
+}
+.chevron-container-gallery:hover {
+    filter: opacity(0.5);
+    cursor: pointer;
+}
+.chevron-container-gallery .chevron-r-container .fa-chevron-right {
+    font-size: 20px;
+}
+
+
+ /*Acrylic, oil, watercolor, mixed, caricatures*/
+
+#work-acrylic {
+    margin-top: 120px;
+}
+.fixed-work {
+    background-color: var(--white);
+    height: 73px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    margin-top: -72px;
+    padding-top: 21px;
+}
+.lateral-menu {
+    display: none; 
+}
+
+.click-painting {
+    display: none;
+}
+.paintings {
+    width: 100%;
+    margin-top: 162px;
+}
+.paintings-group {
+    margin-top: 50px;
+}
+.details {
+    margin-bottom: 14px;
+}
+.details-1 {
+    display: grid;
+    align-items: end;
+    grid-template-columns: 10% 30% 60%;
+}
+.chevron-l .fa-chevron-left {
+    font-size: 20px;
+    transition: filter 0.2s ease-in-out;
+}
+.chevron-l:hover {
+    filter: opacity(0.5);
+    cursor: pointer;
+}
+.thinline {
+    height: 1px;
+    width: 100%;
+    background-color: var(--light-gray-line);
+}
+.paintings-cont {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-width: 77%;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap: 23px;
+    flex-wrap: wrap;
+}
+.container {
+    min-width: 280px;
+    max-width: 280px;
+    margin-bottom: 23px;
+    position: relative;
+    overflow-wrap: normal;
+    transition: filter 0.2s ease-in-out;
+}
+.img-within {
+    height: 200px;
+}
+.container:hover {
+    filter: opacity(0.5);
+    cursor: pointer;
+}
+.chevron-container {
+    display: flex;
+    align-items: left;
+}
+.chevron-r-container {
+    background-color: var(--white);
+    height: 30px;
+    width: 280px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.chevron-r-container .fa-chevron-left {
+    font-size: 20px;
+} 
+/*Aqui comienza el experimento lightbox*/
+.light-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.5);
+    transition: transform 0.3 ease-in-out;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+.light-box img {
+    width: 80vw;
+    max-height: 60vh;
+    object-fit: cover;
+}
+.light-box .description {
+    background-color: var(--white);
+    padding: 20px 80px;
+    text-align: center;
+    margin-top: -7px;
+} 
+.light-box:target {
+    transform: scale(1);
+}
+.close-img {
+    display: block;
+    position: absolute;
+    right: 10%;
+    top: 26%;
+}
+.close-img .fa-xmark {
+    color: var(--black);
+    font-size: 30px;
+}
+.next {
+    display: block;
+    font-size: 25px;
+    padding-top: 230px;
+}
+/*----------------------------------------------------------------------------------------------------------------CONTACT*/
+.contact-message {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    pointer-events: unset;
+    background-color: #11111152;
+    filter: opacity(1);
+    transition: filter 1s ease-in-out;
+}
+.inside-cm {
+    background-color: var(--red);
+    z-index: 20002;
+    position: absolute;
+    height: fit-content;
+    width: 77%;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: inherit;
+    filter: drop-shadow(0px 0px 16px var(--gray));
+    min-width: 200px;
+    padding: 30px;
+    max-width: 700px;
+    border-radius: 15px;
+}
+.closex{
+    display: flex;
+    justify-content: right;
+}
+.fa-xmark {
+    padding: 0px 0px 40px 0;
+    color: var(--white);
+    cursor: pointer;
+    right: 0;
+}
+.inside-cm .urbanist-subtitle {
+    color: var(--white);
+}
+.fa-xmark:hover {
+    filter: brightness(0.5);
+}
+.fa-xmark:active {
+    color: var(--black);
+    filter: opacity(0.5);
+}
+.contact-btn {
+    margin: 40px auto 0 auto;
+    width: 100px;
+    background-color: #882a24;
+    border: none;
+    padding: 10px 40px;
+    color: var(--white);
+    cursor: pointer;
+}
+.contact-btn:hover {
+    filter: brightness(0.9);
+}
+.contact-btn:active {
+    background-color: var(--black);
+    filter: opacity(0.5);
+}
+#contact{
+    margin-top: 120px;
+}
+.form {
+    margin-top: 15px;
+    display: grid;
+    gap: 12px;
+    margin-bottom: 60px;
+}
+.box, .big-box {
+    border-radius: 10px;
+    border: 1px solid var(--light-gray-line);
+    padding: 9px 14px;
+    font-size: var(--urbanist-small-smartphone);
+    font-family: var(--urbanist-small-desktop);
+    color: var(--gray);
+}
+.box {
+    height: 35px;
+}
+.big-box {
+    height: 120px;
+}
+.div-submit {
+    display: flex;
+    justify-content: right;
+}
+.submit {
+    height: 35px;
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    font-size: var(--urbanist-text-smartphone);
+    font-family: var(--urbanist-small-desktop);
+    width: 110px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.submit:hover {
+    filter: opacity(0.5);
+    cursor: pointer;
+}
+.submit:active {
+    transform: scale(-0.8);
+}
+#form-confirm {
+    background-color: papayawhip;
+    display: none;
+}
+
+.info-contact {
+    margin-top: 90px;
+}
+.map {
+    height: 225px;
+    margin: 14px 0;
+}
+.info-contact-text {
+    text-align: center;
+    line-height: 25px;
+}
+
+
+
+
+
+/*-------------------------------- TABLET ------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 768px) {
+    .urbanist-title {
+        font-size: var(--urbanist-title-tablet);
+        line-height: 36px;
+    }
+    .urbanist-subtitle {
+        font-size: var(--urbanist-subtitle-tablet);
+        line-height: 36px;
+    }
+    .urbanist-text {
+        font-size: var(--urbanist-text-tablet);
+        line-height: 35px;
+    }
+    .urbanist-small {
+        font-size: var(--urbanist-small-tablet);
+        line-height: 31px;
+    }
+    header {
+        padding: 0 80px;
+    }
+    .img-logo {
+        width: 78px;
+    }
+    .menuClick.verBarra {
+        height: 250px;
+        width: 190px;
+    }
+
+
+
+    /*-------------HOME/INDEX*/
+        /*SAMPLES*/
+    #samples {
+        margin-top: 150px;
+    }
+    .container-samples {
+        margin-top: 45px;
+        margin-bottom: 29px;
+        display: grid;
+        grid-template-rows: 170px 260px 250px;
+        overflow: hidden;
+    }
+    .cont-samples {
+        margin-bottom: 29px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 20px;
+    }
+    .img-vert {
+        height: 410px;
+        width: 290px;
+    }
+    .cont-samples .div-samples {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .cont-samples .div-samples .urbanist-text{
+        line-height: 22px;
+    }
+    .cont-samples2 {
+        display: grid;
+        grid-template-columns: 50%;
+        grid-template-rows: 250px 73px;
+        justify-content: end;
+        align-items: baseline;
+        gap: 20px;
+    }
+    .cont-samples2 .img-hor {
+        height: 240px;
+        padding-left: 10px;
+    }
+
+    .cont-samples2 .div-samples {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .cont-samples2 .div-samples .urbanist-text {
+        text-align: right;
+    }
+    .cont-samples3 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: -115px; 
+    }
+    .cont-samples3 .img_samples {
+        height: 240px;
+        padding-right: 5px;
+    }
+    .cont-samples3 .div-samples {
+        display: flex;
+        align-items: end;
+    }
+
+    /*Pablo Alfaro*/
+    .div-pablo {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .palfaro-description {
+        margin-top: 0;
+        padding: 0 20px;
+        height: unset;
+    }
+    /*
+    .last {
+        margin-top: 180px;
+    }*/
+
+    /*CONTACT*/
+    .index-contact {
+        width: 70%;
+        height: 320px;
+    }
+        
+    /*-------------BIO*/
+    #biography {
+        margin-top: 150px;
+    }
+    #biography .div-bio .div-img-bio .img-within-bio {
+        width: 60%;
+        margin-left: 20%;
+    }
+    /*-------------GALLERY*/
+    #work {
+        margin-top: 150px;
+    }  
+    .fixed-work-gallery {
+        height: 100px;
+        margin-top: -102px;
+        padding-top: 47px;
+    }
+    .paintings {
+        margin-top: 192px;
+    }
+    .container-gallery {
+        min-width: 260px;
+        max-width: 260px;
+    }
+    .container-gallery .description ul li {
+        line-height: 25px;
+    }
+    .container-gallery .img-within {
+        height: 211px;
+        margin-bottom: 14px;
+    }
+            /*Acrylic, oil, watercolor, mixed, caricatures*/
+
+    #work-acrylic {
+        margin-top: 150px;
+    }
+    .fixed-work {
+        height: 100px;
+        margin-top: -102px;
+        padding-top: 47px;
+    }
+    .paintings {
+        margin-top: 192px;
+    }
+    .chevron-l .fa-chevron-left {
+        font-size: 25px;
+    }
+    .container .description ul li {
+        line-height: 25px;
+    }
+    .container .img-within {
+        height: 210px;
+    }
+    .chevron-container {
+        display: flex;
+        align-items: left;
+    }
+    .chevron-r-container {
+        width: 300px;
+        justify-content: center;
+    }
+    .chevron-r-container .fa-chevron-left {
+        font-size: 25px;
+    }
+    /*Aqui comienza el experimento lightbox*/
+    
+    .close-img {
+        top: 16%;
+    }
+    .close-img .fa-xmark {
+        font-size: 35px;
+    }
+    .next {
+        padding-top: 409px;
+        font-size: 30px;
+    }      
+
+    /*-------------CONTACT*/
+    #contact{
+        margin-top: 150px;
+    }
+    .form {
+        margin-top: 15px;
+        display: flex;
+        gap: 12px;
+        margin-bottom: 60px;
+        width: 100%;
+        height: 180px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: right;
+        text-align: right;
+    }
+    .box, .big-box {
+        border-radius: 10px;
+        border: 1px solid var(--light-gray-line);
+        padding: 9px 14px;
+        font-size: var(--urbanist-small-smartphone);
+        font-family: var(--urbanist-small-desktop);
+        color: var(--gray);
+    }
+    .box {
+        height: 35px;
+    }
+    .big-box {
+        height: 130px;
+    }
+    .div-submit {
+        display: flex;
+        justify-content: end;
+    }
+    .submit {
+        height: 35px;
+        background-color: var(--red);
+        color: var(--white);
+        border: none;
+        font-size: var(--urbanist-text-smartphone);
+        font-family: var(--urbanist-small-desktop);
+        width: 110px;
+        margin: 0;
+    }
+    .info-contact {
+        margin-top: 120px;
+    }
+    .info-contact .urbanist-subtitle {
+        margin-bottom: 27px;
+    }
+    .div-info-contact {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 20px;
+    }
+    .info-contact-text {
+        text-align: left;
+    }
+
+}
+
+/*------------------------------------------------------------------------------ SMALL DESKTOP ------------------------------------------------------*/
+@media screen and (min-width: 1024px) {
+    .urbanist-title {
+        font-size: var(--urbanist-title-desktop);
+    }
+    .urbanist-subtitle {
+        font-size: var(--urbanist-subtitle-desktop);
+    }
+    .urbanist-text {
+        font-size: var(--urbanist-text-desktop);
+    }
+    .urbanist-small {
+        font-size: var(--urbanist-small-desktop);
+    }
+
+    .menuClick {
+        display: none;
+    }
+    .menuClick.verBarra {
+        display: none;
+    }
+    header {
+        display: none;
+    }
+    .navDesktop {
+        display: flex;
+        width: 100%;
+        height: 100px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 11%;
+        border-bottom: 1px solid var(--light-gray-line);
+        background-color: var(--white);
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        overflow: hidden;
+    }
+    .img-logo:hover {
+        cursor: pointer;
+    }
+    .navDesktop-ul {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .navDesktop-ul li {
+        padding-right: 20px;
+    }
+    .navDesktop-ul .urbanist-text:active {
+        filter: opacity(0.5);
+    }
+    .navDesktop-ul .urbanist-text:hover {
+        color: var(--gray);
+    }
+
+    .underline {
+        color: var(--red);
+    }
+    .preloader {
+        background-size: 20%;
+    }
+
+    /*-------------HOME/INDEX*/
+    /*Samples*/
+    #samples {
+        margin-top: 130px;
+    }
+    .container-samples {
+        margin-top: 35px;
+        margin-bottom: 0;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        gap: 20px;
+        justify-content: center;
+        height: 375px;
+        grid-template-rows: 100%;
+    }
+    .cont-samples {
+        margin-bottom: 0px;
+        gap: 20px;
+        display: unset;
+        position: relative;
+        width: 100%;
+        cursor: pointer;
+    }
+    .cont-samples1 .div-samples {
+        margin-top: -79px;
+    }
+    .img-vert {
+        height: unset;
+        width: 100%;
+    }
+    .div-samples {
+        position: absolute;
+        width: 100%;
+        margin-top: -86px;
+        z-index: 3;
+        justify-content: left;
+        display: flex;
+        align-items: center;
+        transition-property: filter;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in;
+        filter: opacity(0);
+    }
+    .div-samples .line {
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+        height: 80px;
+        filter: opacity(0.7);
+    }
+    .div-samples .urbanist-small {
+        color: var(--white);
+        padding-left: 20px;
+        text-align: left;
+        line-height: 20px;
+    }
+    .cont-samples:hover .div-samples {
+        filter: opacity(1);
+    }
+    .div-2-3 {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        gap: 0px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }  
+    .cont-samples2 {
+        width: 100%;
+    }
+    .cont-samples2 .img-hor {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
+    .cont-samples3 {
+        margin-top: 0;
+        width: 100%;
+    }
+    .cont-samples3 .div-samples {
+        align-items: center;
+    }
+    .cont-samples3 .img_samples {
+        height: 100%;
+        padding: 0;
+        width: 100%;
+        padding: 0;
+    } 
+
+    /*Exhibitions*/
+    .img-exh {
+        height: 500px;
+    }
+    .img-exh-desc {
+        width: 250px;
+    }
+
+    /*Pablo Alfaro*/
+    .div-pablo {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 370px;
+    }
+    .palfaro-description {
+        margin-top: 0;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Contact*/
+    .index-contact {
+        height: 320px;
+        width: 50%;
+    }
+    /*-------------------------------------------------------------------------BIO*/
+    #biography {
+        margin-top: 130px;
+    }
+    .div-bio {
+        display: grid;
+        grid-template-columns: 55% 5% 40%;
+    }
+    #biography .div-bio .div-img-bio .img-within-bio {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 20px;
+        margin-left: 0;
+        height: 400px;
+    }
+    /*----------------------------------------------------------------------------------GALLERY*/
+    #work {
+        margin-top: 120px;
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }  
+    .fixed-work-gallery {
+        height: 100px;
+        margin-top: -30px;
+        padding-top: 47px;
+    }
+    .lateral-menu {
+        display: block;
+        margin-top: 100px;
+    }
+    .div-menu-lat {
+        position: fixed;
+        height: 100vh;
+    }
+    .lateral-menu-ul .urbanist-text {
+        line-height: 50px;
+    }
+    .lateral-menu-ul .urbanist-text:active {
+        color: var(--black);
+    }
+    .lateral-menu-ul .urbanist-text:hover {
+        color: var(--black);
+    }
+    .paintings-gallery {
+        margin-top: 65px;
+    }
+    .paintings-group-gallery {
+        margin-top: 10px;
+    }
+    .container-gallery {
+        min-width: 200px;
+        max-width: 200px;
+    }
+    .container-gallery.description ul li {
+        line-height: 25px;
+    }
+    .container-gallery .img-within {
+        height: 150px;
+        margin-bottom: 14px;
+    }
+
+    /*Acrylic, oil, watercolor, mixed, caricatures*/
+    #work-acrylic, #work-oil, #work-mixed, #work-watercolor, #work-caricatures {
+        margin-top: 120px;
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+    .fixed-work {
+        height: 100px;
+        margin-top: -30px;
+        padding-top: 47px;
+    }
+    .lateral-menu {
+        display: block;
+        margin-top: 100px;
+    }
+    .div-menu-lat {
+        position: fixed;
+        height: 100vh;
+    }
+    .lateral-menu-ul .urbanist-text {
+        line-height: 50px;
+    }
+    .paintings {
+        margin-top: 12px;
+    }
+    .container {
+        min-width: 260px;
+        max-width: 260px;
+    }
+    .container .description ul li {
+        line-height: 25px;
+    }
+
+    .container .img-within {
+        height: 211px;
+        margin-bottom: 14px;
+    }
+    .chevron-container {
+        display: none;
+    }
+    /*Aqui comienza el experimento lightbox*/
+    
+    .light-box img {
+        width: 49vw;
+        height: 360px;
+    }
+    .light-box {
+        padding-top: 70px;
+    }
+    .light-box .description .urbanist-text {
+        line-height: unset;
+    }
+    .next {
+        display: block;
+        font-size: 30px;
+        padding: 340px 30px 0 30px;
+    } 
+
+    /*-------------CONTACT*/
+    .box, .big-box {
+        font-size: var(--urbanist-small-desktop);
+    }
+    .info-contact-text {
+        padding-top: 25px;
+    }
+}
+/*-------------------------------------------------------------------------------------- BIG DESKTOP ------------------------------------------------------*/
+@media screen and (min-width: 1280px) {
+    .nor-length {
+        width: 65%;
+    }
+
+/*-------------HOME/INDEX*/
+    /*Samples*/
+    #samples {
+        margin-top: 155px;
+        margin-bottom: 180px;
+    }
+    .container-samples {
+        height: max-content;
+    }
+    .cont-samples {
+        height: 100%;
+    }
+    .cont-samples1 .div-samples {
+        margin-top: -75px;
+    }
+    .cont-samples2 .div-samples {
+        margin-top: -76px;
+    }
+    .img-vert {
+        height: 100%;
+    }
+    .div-2-3 {    
+        height: 100%;
+        gap: 20px;
+    }
+    /*Exhibitions*/
+    #exhibitions, #pablo-alfaro {
+        margin-bottom: 160px;
+    }
+    /*Exhibitions*/
+    .img-exh {
+        height: 600px;
+    }
+    /*Pablo Alfaro*/
+    .div-pablo {
+        grid-template-rows: 450px;
+        grid-template-columns: 35% 65%;
+    }
+    /*Contact*/
+    #contact {
+        margin-bottom: 100px;
+    }
+    /*-------------BIO*/
+    #biography {
+        margin-top: 155px;
+    }
+    /*-------------GALLERY*/
+    #work {
+        margin-top: 155px;
+    }
+    .fixed-work-gallery {
+        height: 121px;
+        display: flex;
+        align-items: end;
+        margin-top: -60px;
+    }
+    .paintings-gallery {
+        margin-top: 51px;
+    }
+            /*Acrylic, oil, watercolor, mixed, caricatures*/
+    #work-acrylic, #work-mixed, #work-oil, #work-watercolor, #work-caricatures {
+        margin-top: 155px;
+    }
+    .fixed-work {
+        height: 121px;
+        display: flex;
+        align-items: end;
+        margin-top: -60px;
+    }
+    .paintings {
+        margin-top: 51px;
+    }
+    .light-box img {
+        width: 50vw;
+        height: 506px;
+    }
+
+}
+
+/*EXTRAS*/
+@media screen and (min-height: 1050px) {
+    #footer {
+        margin-top: 100px;
+        position: fixed;
+    }
+}
+@media screen and (min-width: 1500px) {
+    .div-pablo {
+        grid-template-rows: 450px;
+        grid-template-columns: 35% 65%;
+    }
+    .light-box img {
+        width: 40vw;
+        height: 557px;
+        min-height: 557px;
+    }
+}
+@media screen and (min-width: 1800px) {
+    .div-pablo {
+        grid-template-columns: 25% 65%;
+    }
+}
+@media screen and (min-width: 2000px) {
+    .div-pablo {
+        grid-template-rows: 569px;
+    }
+}
